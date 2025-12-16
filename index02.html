@@ -1,0 +1,852 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Seven Climatização em Florianópolis | Instalação, PMOC, VRF e Dutos</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Climatização comercial e industrial em Florianópolis e região. Instalação, manutenção PMOC, VRF, dutos e ar-condicionado central. Orçamento rápido no WhatsApp." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://www.seudominio.com.br/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Seven Climatização | Comercial e Industrial" />
+  <meta property="og:description" content="Instalação, PMOC, VRF e dutos em Florianópolis e região. Orçamento rápido no WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:url" content="https://www.seudominio.com.br/" />
+
+  <!-- Local Business Schema (edite URL se quiser) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"HVACBusiness",
+    "name":"Seven Climatização",
+    "url":"https://www.seudominio.com.br/",
+    "telephone":"+55 48 99632-8509",
+    "areaServed":["Florianópolis","São José","Palhoça","Biguaçu","Grande Florianópolis"],
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Florianópolis",
+      "addressRegion":"SC",
+      "addressCountry":"BR"
+    },
+    "openingHours":"Mo-Fr 08:00-18:00"
+  }
+  </script>
+
+  <style>
+    :root{
+      --brand:#000000;
+      --brand2:#6A7A78;
+      --bg:#0DC4F5;
+      --text:#eaf6f7;
+      --muted:#a7c8cd;
+      --line:rgba(255,255,255,.10);
+      --ok:#2dd4bf;
+      --warn:#fbbf24;
+      --shadow: 0 18px 55px rgba(0,0,0,.35);
+      --radius: 18px;
+      --max: 1140px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;background:black;--bg); color:var(--text);}
+    a{color:inherit;text-decoration:none}
+    .container{width:100%;max-width:var(--max);margin:0 auto;padding:0 18px}
+
+    /* TOPBAR */
+    .topbar{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background: black;
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:12px 0; gap:14px;
+    }
+    .brand{
+      display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.2px;
+    }
+
+    /* LOGO (sem preto/cinza/branco — tudo na paleta teal/azul) */
+    .logo{
+      width:38px;height:38px;border-radius:14px;
+      background: 
+      black;
+      box-shadow: var(--shadow);
+      position:relative;
+      border: 1px solid rgba(255,255,255,.12);
+      overflow:hidden;
+    }
+    .logo:before{
+      content:"";
+      position:absolute; inset:-40%;
+      background: radial-gradient(circle at 30% 30%, rgba(45,212,191,.55), transparent 55%);
+      transform: rotate(18deg);
+    }
+    .logo:after{
+      content:"S";
+      position:absolute; inset:0;
+      display:grid; place-items:center;
+      font-weight:1000;
+      color: rgba(234,246,247,.95);
+      text-shadow: 0 10px 25px rgba(0,0,0,.25);
+      letter-spacing:.5px;
+    }
+
+    .navlinks{display:flex; gap:16px; align-items:center; flex-wrap:wrap}
+    .navlinks a{color:var(--muted);font-weight:700;font-size:14px}
+    .navlinks a:hover{color:var(--text)}
+
+    .btn{
+      border:none; cursor:pointer;
+      border-radius: 999px;
+      padding:12px 16px;
+      font-weight:900;
+      display:inline-flex; align-items:center; gap:10px;
+      transition: transform .08s ease, opacity .2s ease;
+      white-space:nowrap;
+    }
+    .btn:active{transform:scale(.98)}
+    .btn-primary{
+      background: linear-gradient(135deg, var(--brand), var(--brand2));
+      color:#062127;
+      box-shadow: 0 12px 28px rgba(14,165,183,.25);
+    }
+    .btn-ghost{
+      background: rgba(255,255,255,.06);
+      color:var(--text);
+      border:1px solid var(--line);
+    }
+    .pill{
+      display:inline-flex; gap:8px; align-items:center;
+      padding:8px 12px; border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color:var(--muted);
+      font-weight:800; font-size:13px;
+    }
+
+    /* HERO */
+    .hero{padding:46px 0 22px}
+    .hero-grid{
+      display:grid; grid-template-columns: 1.2fr .8fr;
+      gap:22px;
+      align-items:stretch;
+    }
+    @media (max-width: 940px){ .hero-grid{grid-template-columns:1fr} }
+    h1{
+      margin:14px 0 12px;
+      font-size: clamp(30px, 4.3vw, 54px);
+      line-height:1.05;
+      letter-spacing:-.6px;
+    }
+    .sub{
+      color:var(--muted);
+      font-size: clamp(15px, 1.5vw, 18px);
+      line-height:1.6;
+      margin:0 0 18px;
+    }
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0 8px}
+    .trust-row{display:flex; gap:12px; flex-wrap:wrap; margin-top:14px}
+    .trust{
+      display:flex; gap:10px; align-items:flex-start; padding:12px;
+      border-radius: var(--radius); background: rgba(255,255,255,.04);
+      border:1px solid var(--line); flex:1; min-width:240px
+    }
+    .trust b{display:block}
+    .trust span{color:var(--muted); font-size:13px; line-height:1.45}
+    .icon{
+      width:34px; height:34px; border-radius:12px;
+      background: rgba(45,212,191,.12);
+      border:1px solid rgba(45,212,191,.22);
+      display:grid; place-items:center;
+      color:var(--ok); font-weight:1000;
+      flex:0 0 auto;
+    }
+
+    /* CARD FORM */
+    .card{
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border:1px solid var(--line);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .card-head{
+      padding:18px 18px 12px;
+      border-bottom:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+    }
+    .card-head h3{margin:0 0 6px;font-size:18px}
+    .card-head p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}
+    form{padding:16px 18px 18px;display:grid;gap:10px}
+    .grid2{display:grid;grid-template-columns:1fr 1fr; gap:10px}
+    @media (max-width: 480px){ .grid2{grid-template-columns:1fr} }
+    input, select, textarea{
+      width:100%;
+      padding:12px 12px;
+      border-radius: 14px;
+      border:1px solid var(--line);
+      background: rgba(7,27,32,.35);
+      color: var(--text);
+      outline:none;
+      font-weight:750;
+    }
+    textarea{min-height:88px; resize:vertical}
+    input::placeholder, textarea::placeholder{color: rgba(167,200,205,.75)}
+    .small{font-size:12px;color:var(--muted);line-height:1.5}
+    .badge{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+      background: rgba(251,191,36,.12);
+      border:1px solid rgba(251,191,36,.24);
+      color:#fde68a;
+      font-weight:900;
+      font-size:12px;
+    }
+
+    /* SECTIONS */
+    section{padding:36px 0}
+    .section-title{
+      display:flex; align-items:flex-end; justify-content:space-between; gap:14px; flex-wrap:wrap;
+      margin-bottom:14px;
+    }
+    .section-title h2{margin:0;font-size:26px;letter-spacing:-.3px}
+    .section-title p{margin:0;color:var(--muted);max-width:680px;line-height:1.6}
+
+    .cards{
+      display:grid; gap:12px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @media (max-width: 980px){ .cards{grid-template-columns: repeat(2, 1fr)} }
+    @media (max-width: 520px){ .cards{grid-template-columns: 1fr} }
+
+    .mini{
+      padding:16px; border-radius: var(--radius);
+      background: rgba(255,255,255,.04);
+      border:1px solid var(--line);
+    }
+    .mini b{display:block;margin-bottom:6px}
+    .mini p{margin:0;color:var(--muted);font-size:13px;line-height:1.55}
+
+    .kpi{
+      display:grid; gap:12px;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top:12px;
+    }
+    @media (max-width: 860px){ .kpi{grid-template-columns:1fr} }
+    .kpi .mini{display:flex;align-items:flex-start;gap:10px}
+    .kpi .icon{background: rgba(14,165,183,.14); border-color: rgba(14,165,183,.24); color: var(--brand);}
+
+    /* AVALIAÇÕES EM CARDS COM FOTO */
+    .reviews{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:12px;
+    }
+    @media (max-width: 980px){ .reviews{grid-template-columns: repeat(2, 1fr)} }
+    @media (max-width: 620px){ .reviews{grid-template-columns: 1fr} }
+
+    .review-card{
+      border-radius: var(--radius);
+      background: white;
+      border:1px solid var(--line);
+      overflow:hidden;
+      box-shadow: 0 10px 35px rgba(0,0,0,.20);
+      display:flex;
+      flex-direction:column;
+      min-height: 260px;
+    }
+    .review-top{
+      display:flex; gap:12px; align-items:center;
+      padding:14px 14px 10px;
+    }
+    .avatar{
+      width:48px;height:48px;border-radius:16px;
+      border:1px solid rgba(255,255,255,.14);
+      overflow:hidden;
+      flex:0 0 auto;
+      background: linear-gradient(135deg, rgba(14,165,183,.35), rgba(45,212,191,.18));
+    }
+    .avatar img{
+      width:100%;height:100%;object-fit:cover;display:block;
+    }
+    .review-meta b{display:block;font-weight:950}
+    .review-meta span{display:block;color:var(--muted);font-size:12px;margin-top:2px;line-height:1.3}
+    .stars{
+      margin-left:auto;
+      display:inline-flex; gap:2px;
+      font-size:14px;
+      color:#fde68a;
+      opacity:.95;
+      user-select:none;
+    }
+    .review-body{
+      padding:0 14px 14px;
+      color:black
+      line-height:1.6;
+      font-weight:650;
+      flex:1;
+    }
+    .review-footer{
+      padding:12px 14px;
+      border-top:1px solid var(--line);
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+      color:var(--muted); font-size:12px;
+      background: rgba(255,255,255,.02);
+    }
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:7px 10px;
+      border-radius:999px;
+      border:1px solid rgba(14,165,183,.22);
+      background: rgba(14,165,183,.12);
+      color: rgba(234,246,247,.92);
+      font-weight:900;
+      font-size:12px;
+      white-space:nowrap;
+    }
+
+    /* FAQ */
+    details{
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.04);
+      border:1px solid var(--line);
+      padding:14px 14px;
+    }
+    details + details{margin-top:10px}
+    summary{cursor:pointer;font-weight:950}
+    details p{margin:10px 0 0;color:var(--muted);line-height:1.6}
+
+    /* FOOTER */
+    footer{padding:26px 0 42px; border-top:1px solid var(--line); color:var(--muted)}
+    .footer-grid{display:grid;grid-template-columns: 1.2fr .8fr; gap:18px}
+    @media (max-width: 860px){ .footer-grid{grid-template-columns:1fr} }
+    .footer-grid b{color:var(--text)}
+    .sep{height:1px;background:var(--line);margin:14px 0}
+
+    /* Floating CTA */
+    .float{
+      position:fixed; right:16px; bottom:16px; z-index:60;
+      display:flex; flex-direction:column; gap:10px;
+    }
+    .float .btn{box-shadow: var(--shadow)}
+    .toast{
+      position:fixed; left:50%; transform:translateX(-50%);
+      bottom:16px; z-index:70;
+      background: rgba(0,0,0,.55);
+      border:1px solid var(--line);
+      color:var(--text);
+      padding:10px 12px;
+      border-radius: 999px;
+      font-weight:900;
+      display:none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="container">
+      <div class="nav">
+        <div class="brand" aria-label="Seven Climatização">
+          <div class="logo" aria-hidden="true"></div>
+          <div>
+            Seven Climatização<br/>
+            <span style="color:var(--muted);font-weight:800;font-size:12px">Comercial • Industrial • Alto padrão</span>
+          </div>
+        </div>
+
+        <div class="navlinks" aria-label="Atalhos">
+          <a href="#servicos">Serviços</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#avaliacoes">Avaliações</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contato" class="btn btn-ghost">Orçamento</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <span class="pill">📍 Florianópolis e Região • Atendimento técnico especializado</span>
+
+          <h1>Climatização Comercial e Industrial em Florianópolis</h1>
+          <p class="sub">
+            Soluções completas em ar-condicionado com foco em <b>performance, conformidade e economia</b>.
+            Instalação, PMOC, VRF, dutos e manutenção preventiva para empresas e obras.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" id="ctaHeroWhats" href="#" rel="nofollow">
+              💬 Solicitar Orçamento no WhatsApp
+            </a>
+            <span class="badge">Somente WhatsApp • Retorno rápido</span>
+          </div>
+
+          <div class="trust-row">
+            <div class="trust">
+              <div class="icon">✓</div>
+              <div>
+                <b>Especialistas em sistemas avançados</b>
+                <span>VRF, dutos, ar-condicionado central e soluções sob medida para alta demanda.</span>
+              </div>
+            </div>
+            <div class="trust">
+              <div class="icon">✓</div>
+              <div>
+                <b>PMOC com histórico e rastreabilidade</b>
+                <span>Organização, registros e padronização para facilitar auditorias e conformidade.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="trust-row">
+            <div class="trust">
+              <div class="icon">✓</div>
+              <div>
+                <b>Equipe técnica e atendimento profissional</b>
+                <span>Comunicação clara, cronograma e transparência do início ao fim.</span>
+              </div>
+            </div>
+            <div class="trust">
+              <div class="icon">✓</div>
+              <div>
+                <b>Foco em economia no longo prazo</b>
+                <span>Melhor eficiência, menos paradas e preventiva bem feita.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORM CARD -->
+        <aside class="card" id="contato">
+          <div class="card-head">
+            <h3>Peça um orçamento (rápido)</h3>
+            <p>Preencha em 30 segundos e envie direto no WhatsApp.</p>
+          </div>
+
+          <form id="leadForm" autocomplete="on">
+            <div class="grid2">
+              <input required name="nome" placeholder="Seu nome" />
+              <input required name="telefone" placeholder="WhatsApp (DDD)" inputmode="tel" />
+            </div>
+
+            <div class="grid2">
+              <select required name="tipo">
+                <option value="" disabled selected>Tipo de atendimento</option>
+                <option>Comercial</option>
+                <option>Industrial</option>
+                <option>Condomínio</option>
+                <option>Residencial alto padrão</option>
+                <option>Obra / Projeto</option>
+              </select>
+
+              <select required name="servico">
+                <option value="" disabled selected>Serviço principal</option>
+                <option>PMOC (manutenção e adequação)</option>
+                <option>Manutenção de ar-condicionado</option>
+                <option>Instalação comercial</option>
+                <option>Sistema VRF / Água gelada</option>
+                <option>Fabricação e instalação de dutos</option>
+                <option>Vistoria / diagnóstico</option>
+              </select>
+            </div>
+
+            <input name="cidade" placeholder="Cidade (ex.: Florianópolis)" />
+
+            <textarea name="mensagem" placeholder="Descreva rapidamente: quantidade de equipamentos, m², urgência, local..."></textarea>
+
+            <button class="btn btn-primary" type="submit">
+              ✅ Enviar e falar com um especialista
+            </button>
+
+            <div class="small">
+              Você será direcionado ao WhatsApp com a mensagem pronta.
+              <br/>Atendemos: <b>Florianópolis, São José, Palhoça e Biguaçu</b>.
+            </div>
+          </form>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <!-- SERVICES (SEO H2) -->
+  <section id="servicos">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>Serviços de climatização com foco em resultado</h2>
+          <p>Escolha o que você precisa — se estiver em dúvida, fazemos diagnóstico e indicamos o melhor caminho.</p>
+        </div>
+        <a class="btn btn-ghost" id="ctaServicesWhats" href="#" rel="nofollow">💬 Orçar no WhatsApp</a>
+      </div>
+
+      <div class="cards">
+        <div class="mini">
+          <b>Instalação de Ar-Condicionado Comercial</b>
+          <p>Dimensionamento, planejamento e execução para lojas, escritórios, clínicas e empresas.</p>
+        </div>
+        <div class="mini">
+          <b>Manutenção de Ar-Condicionado</b>
+          <p>Preventiva e corretiva para reduzir falhas, consumo e paradas.</p>
+        </div>
+        <div class="mini">
+          <b>PMOC em Florianópolis e Região</b>
+          <p>Adequação, manutenção e organização de registros para manter conformidade.</p>
+        </div>
+        <div class="mini">
+          <b>Sistemas VRF e Água Gelada</b>
+          <p>Soluções de alta eficiência para empreendimentos e grandes áreas.</p>
+        </div>
+        <div class="mini">
+          <b>Fabricação e Instalação de Dutos</b>
+          <p>Dutos de climatização, ventilação e exaustão com montagem profissional.</p>
+        </div>
+        <div class="mini">
+          <b>Ar-Condicionado Central</b>
+          <p>Implantação e manutenção para projetos que exigem controle e estabilidade térmica.</p>
+        </div>
+        <div class="mini">
+          <b>Vistoria e Diagnóstico</b>
+          <p>Identificação de causas de falhas, baixa performance, ruído ou consumo elevado.</p>
+        </div>
+        <div class="mini">
+          <b>Planos Mensais (Empresa)</b>
+          <p>Rotina preventiva + prioridade + histórico e organização. Ideal para operação contínua.</p>
+        </div>
+      </div>
+
+      <div class="kpi">
+        <div class="mini">
+          <div class="hide icon">⚡</div>
+          <div class="icon">⚡</div>
+          <div>
+            <b>Retorno rápido</b>
+            <p>Mensagem pronta no WhatsApp para agilizar o orçamento.</p>
+          </div>
+        </div>
+        <div class="mini">
+          <div class="icon">🧰</div>
+          <div>
+            <b>Execução profissional</b>
+            <p>Cronograma, padrão de serviço e comunicação clara.</p>
+          </div>
+        </div>
+        <div class="mini">
+          <div class="icon">📍</div>
+          <div>
+            <b>Atendimento local</b>
+            <p>Grande Florianópolis com foco em empresas e obras.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="como-funciona">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>Como funciona (simples e direto)</h2>
+          <p>Processo pensado para ser rápido no orçamento e consistente na entrega.</p>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="mini">
+          <b>1) Contato e pré-diagnóstico</b>
+          <p>Você envia a demanda pelo WhatsApp. Se tiver planta/projeto, melhor ainda.</p>
+        </div>
+        <div class="mini">
+          <b>2) Visita técnica (se necessário)</b>
+          <p>Avaliamos local, carga térmica, viabilidade, pontos de instalação e acessos.</p>
+        </div>
+        <div class="mini">
+          <b>3) Orçamento claro e objetivo</b>
+          <p>Proposta com escopo e valores organizados para decisão rápida.</p>
+        </div>
+        <div class="mini">
+          <b>4) Execução e entrega</b>
+          <p>Equipe técnica, cronograma e padronização. Pós-venda e manutenção para continuidade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA -->
+  <section id="area-atendida">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>Área atendida</h2>
+          <p>Atendemos Florianópolis, São José, Palhoça, Biguaçu e região.</p>
+        </div>
+        <a class="btn btn-primary" id="ctaAreaWhats" href="#" rel="nofollow">💬 Falar no WhatsApp</a>
+      </div>
+
+      <div class="cards">
+        <div class="mini"><b>Florianópolis</b><p>Centro, Norte, Sul, Continente e bairros.</p></div>
+        <div class="mini"><b>São José</b><p>Comércio, condomínios e obras.</p></div>
+        <div class="mini"><b>Palhoça</b><p>Empresas e projetos residenciais.</p></div>
+        <div class="mini"><b>Biguaçu</b><p>Atendimento sob agendamento.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVALIAÇÕES EM CARDS COM FOTO -->
+  <section id="avaliacoes">
+  <div class="container">
+    <div class="section-title">
+      <div>
+        <h2>Avaliações reais (Instagram)</h2>
+        <p>Depoimentos com foto aumentam muito a conversão. Abaixo os cards são gerados automaticamente.</p>
+      </div>
+      <a class="btn btn-ghost" id="ctaReviewsWhats" href="#" rel="nofollow">💬 Quero um orçamento</a>
+    </div>
+
+    <div class="reviews" id="reviewsGrid"></div>
+
+    <div style="margin-top:12px; display:flex; gap:12px; flex-wrap:wrap">
+      <a class="btn btn-ghost" href="#contato">✍️ Pedir orçamento</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>Perguntas frequentes</h2>
+          <p>Isso reduz objeções e aumenta conversão.</p>
+        </div>
+      </div>
+
+      <details>
+        <summary>Vocês fazem PMOC para empresas?</summary>
+        <p>Sim. Atuamos com manutenção e adequação PMOC, incluindo rotinas preventivas e organização de registros.</p>
+      </details>
+
+      <details>
+        <summary>Quanto tempo leva para receber orçamento?</summary>
+        <p>Depende da complexidade. Demandas simples podem ser orçadas rapidamente; projetos maiores podem exigir visita técnica.</p>
+      </details>
+
+      <details>
+        <summary>Atendem quais cidades?</summary>
+        <p>Florianópolis, São José, Palhoça, Biguaçu e região.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section>
+    <div class="container">
+      <div class="card" style="padding:18px">
+        <div class="section-title" style="margin:0">
+          <div>
+            <h2 style="margin:0 0 6px">Pronto para resolver sua climatização?</h2>
+            <p style="margin:0;color:var(--muted)">Clique no WhatsApp e envie sua demanda. A mensagem já vai pronta.</p>
+          </div>
+          <a class="btn btn-primary" id="ctaFinalWhats" href="#" rel="nofollow">💬 Solicitar orçamento no WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <b>Seven Climatização</b><br/>
+          <span>Instalação • Manutenção • PMOC • VRF • Dutos</span>
+          <div class="sep"></div>
+          <div class="small">
+            <b>Horário:</b> Seg–Sex 08:00–18:00<br/>
+            <b>WhatsApp:</b> <b>(48) 99632-8509</b><br/>
+            <b>Atendimento:</b> Florianópolis e região
+          </div>
+        </div>
+        <div>
+          <b>SEO Local (para o Google)</b>
+          <div class="sep"></div>
+          <div class="small">
+            Palavras-chave incluídas: <b>climatização comercial</b>, <b>climatização industrial</b>, <b>PMOC</b>,
+            <b>instalação</b>, <b>manutenção</b> e <b>Florianópolis</b>.
+          </div>
+        </div>
+      </div>
+
+      <div class="sep"></div>
+      <div class="small">© <span id="year"></span> Seven Climatização. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+
+  <!-- Floating Whats -->
+  <div class="float" aria-label="Atalhos rápidos">
+    <a class="btn btn-primary" id="ctaFloatWhats" href="#" rel="nofollow">💬 WhatsApp</a>
+    <a class="btn btn-ghost" href="#contato">🧾 Orçamento</a>
+  </div>
+
+  <div class="toast" id="toast">Mensagem pronta! Abrindo WhatsApp…</div>
+
+  <script>
+    // ========= CONFIGURE AQUI =========
+    const WHATSAPP_NUMBER = "5548996328509"; // 55 + DDD + número
+    const BUSINESS_NAME = "Seven Climatização";
+    const CITY = "Florianópolis";
+    // ================================
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Capture UTM (opcional)
+    const params = new URLSearchParams(window.location.search);
+    const utm = {
+      source: params.get("utm_source") || "",
+      medium: params.get("utm_medium") || "",
+      campaign: params.get("utm_campaign") || "",
+      term: params.get("utm_term") || "",
+      content: params.get("utm_content") || ""
+    };
+
+    function buildWhatsLink(message){
+      const text = encodeURIComponent(message);
+      return `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
+    }
+
+    function showToast(){
+      const t = document.getElementById("toast");
+      t.style.display = "block";
+      setTimeout(()=> t.style.display = "none", 1800);
+    }
+
+    function defaultMessage(){
+      let msg = `Olá! Quero um orçamento com a ${BUSINESS_NAME}.\n`;
+      msg += `Cidade: ${CITY}\n`;
+      if (utm.source || utm.medium || utm.campaign){
+        msg += `\n(UTM) source=${utm.source} | medium=${utm.medium} | campaign=${utm.campaign}\n`;
+      }
+      msg += `\nMinha demanda: `;
+      return msg;
+    }
+
+    // Wire CTAs
+    const ctas = ["ctaHeroWhats","ctaServicesWhats","ctaAreaWhats","ctaReviewsWhats","ctaFinalWhats","ctaFloatWhats"];
+    ctas.forEach(id=>{
+      const el = document.getElementById(id);
+      if(!el) return;
+      el.href = buildWhatsLink(defaultMessage());
+      el.addEventListener("click", ()=> showToast());
+    });
+
+    // Form submit -> Whats
+    const form = document.getElementById("leadForm");
+    form.addEventListener("submit", (e)=>{
+      e.preventDefault();
+      const data = new FormData(form);
+      const nome = (data.get("nome")||"").toString().trim();
+      const tel = (data.get("telefone")||"").toString().trim();
+      const tipo = (data.get("tipo")||"").toString().trim();
+      const servico = (data.get("servico")||"").toString().trim();
+      const cidade = (data.get("cidade")||"").toString().trim();
+      const mensagem = (data.get("mensagem")||"").toString().trim();
+
+      let msg = `Olá! Quero um orçamento com a ${BUSINESS_NAME}.\n\n`;
+      msg += `Nome: ${nome}\n`;
+      msg += `WhatsApp: ${tel}\n`;
+      msg += `Tipo: ${tipo}\n`;
+      msg += `Serviço: ${servico}\n`;
+      msg += `Cidade: ${cidade || CITY}\n`;
+      if (mensagem) msg += `Detalhes: ${mensagem}\n`;
+
+      if (utm.source || utm.medium || utm.campaign || utm.term || utm.content){
+        msg += `\n(UTM) source=${utm.source} | medium=${utm.medium} | campaign=${utm.campaign} | term=${utm.term} | content=${utm.content}\n`;
+      }
+
+      showToast();
+      window.location.href = buildWhatsLink(msg);
+    });
+    
+  // ✅ Coloque as imagens em /images (recomendado) ou use URL direta
+  // Ex.: images/rev-1.jpg, images/rev-2.jpg, images/rev-3.jpg
+
+  const instaReviews = [
+    {
+      name: "Figueirense FC",
+      meta: "Florianópolis • SC",
+      stars: 5,
+      tag: "PMOC / Preventiva",
+      photo: "images/Figueirense.png",
+      text: "O Figueirense é grato por contar com profissionais de extrema dedicação e competência. Obrigado, equipe Seven Climatização.",
+      sourceUrl: "https://www.instagram.com/p/CzwDjGIOmrn/"
+    },
+    {
+      name: "Beck & Falk",
+      meta: "São José • SC",
+      stars: 5,
+      tag: "Comercial",
+      photo: "images/rev-2.jpg",
+      text: "Na condição de projetista de sistemas de climatização, sempre indiquei a Seven para meus clientes pela confiança que tenho na empresa.Todos os meus clientes saíram satisfeitos com a organização, limpeza e cuidado que a equipe demonstrou nos serviços.",
+      sourceUrl: "https://www.instagram.com/p/C1XFazPiWBw/"
+    },
+    {
+      name: "Cliente 3",
+      meta: "Grande Floripa • SC",
+      stars: 5,
+      tag: "Manutenção",
+      photo: "images/rev-3.jpg",
+      text: "Cole aqui o texto do depoimento do Instagram (curto e forte).",
+      sourceUrl: "https://www.instagram.com/p/C84mOY1N03E/"
+    }
+  ];
+
+  function starString(n){ return "★★★★★".slice(0, Math.max(0, Math.min(5, n || 5))); }
+
+  function renderReviews(){
+    const grid = document.getElementById("reviewsGrid");
+    if(!grid) return;
+
+    grid.innerHTML = instaReviews.map(r => `
+      <article class="review-card">
+        <div class="review-top">
+          <div class="avatar">
+            <img src="${r.photo}" alt="Foto de ${r.name}" onerror="this.remove();" />
+          </div>
+          <div class="review-meta">
+            <b>${r.name}</b>
+            <span>${r.meta}</span>
+          </div>
+          <div class="stars" aria-label="${r.stars} estrelas">${starString(r.stars)}</div>
+        </div>
+
+        <div class="review-body">“${r.text}”</div>
+
+        <div class="review-footer">
+          <a href="${r.sourceUrl}" target="_blank" rel="nofollow noopener" style="text-decoration:underline; color:inherit;">
+            Origem: Instagram
+          </a>
+          <span class="chip">${r.tag}</span>
+        </div>
+      </article>
+    `).join("");
+  }
+
+  renderReviews();
+</script>
+
+  </script>
+</body>
+</html>
