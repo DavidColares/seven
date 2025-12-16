@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Seven Climatização em Florianópolis | Instalação, PMOC, VRF e Dutos</title>
+  <link rel="shortcut icon" href="imagens/Seven-logo.png" type="image/x-icon">
 
   <!-- SEO -->
   <meta name="description" content="Climatização comercial e industrial em Florianópolis e região. Instalação, manutenção PMOC, VRF, dutos e ar-condicionado central. Orçamento rápido no WhatsApp." />
@@ -38,20 +39,28 @@
 
   <style>
     :root{
-      --brand:#000000;
-      --brand2:#6A7A78;
-      --bg:#0DC4F5;
-      --text:#eaf6f7;
-      --muted:#a7c8cd;
+      --brand:#0D0D0D;
+      --brand2:#595959;
+      --bg:#071b20;
+      --text:#EBEFF2;
+      --muted:#EBEFF2;
       --line:rgba(255,255,255,.10);
       --ok:#2dd4bf;
       --warn:#fbbf24;
       --shadow: 0 18px 55px rgba(0,0,0,.35);
       --radius: 18px;
       --max: 1140px;
+
+      /*/* Color Theme Swatches in Hex 
+.Dental-|-Landing-Page-|-Web-Site-Design-—-Ivory-Clinic-1-hex { color: #A3B2BF; }
+.Dental-|-Landing-Page-|-Web-Site-Design-—-Ivory-Clinic-2-hex { color: #C5D0D9; }
+.Dental-|-Landing-Page-|-Web-Site-Design-—-Ivory-Clinic-3-hex { color: #EBEFF2; }
+.Dental-|-Landing-Page-|-Web-Site-Design-—-Ivory-Clinic-4-hex { color: #595959; }
+.Dental-|-Landing-Page-|-Web-Site-Design-—-Ivory-Clinic-5-hex { color: #0D0D0D; }
+*/
     }
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;background:black;--bg); color:var(--text);}
+    html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;background:#595959; color:#EBEFF2;}
     a{color:inherit;text-decoration:none}
     .container{width:100%;max-width:var(--max);margin:0 auto;padding:0 18px}
 
@@ -59,7 +68,7 @@
     .topbar{
       position:sticky; top:0; z-index:50;
       backdrop-filter: blur(10px);
-      background: black;
+      background: #0D0D0D;
       border-bottom:1px solid var(--line);
     }
     .nav{
@@ -72,33 +81,27 @@
 
     /* LOGO (sem preto/cinza/branco — tudo na paleta teal/azul) */
     .logo{
-      width:38px;height:38px;border-radius:14px;
-      background: 
-      black;
-      box-shadow: var(--shadow);
-      position:relative;
-      border: 1px solid rgba(255,255,255,.12);
-      overflow:hidden;
-    }
-    .logo:before{
-      content:"";
-      position:absolute; inset:-40%;
-      background: radial-gradient(circle at 30% 30%, rgba(45,212,191,.55), transparent 55%);
-      transform: rotate(18deg);
-    }
-    .logo:after{
-      content:"S";
-      position:absolute; inset:0;
-      display:grid; place-items:center;
-      font-weight:1000;
-      color: rgba(234,246,247,.95);
-      text-shadow: 0 10px 25px rgba(0,0,0,.25);
-      letter-spacing:.5px;
-    }
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0,0,0,.12);
+}
+
+.logo img{
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
 
     .navlinks{display:flex; gap:16px; align-items:center; flex-wrap:wrap}
-    .navlinks a{color:var(--muted);font-weight:700;font-size:14px}
-    .navlinks a:hover{color:var(--text)}
+    .navlinks a{color:var(--text);font-weight:700;font-size:14px}
+    .navlinks a:hover{color:#A3B2BF}
 
     .btn{
       border:none; cursor:pointer;
@@ -111,12 +114,12 @@
     }
     .btn:active{transform:scale(.98)}
     .btn-primary{
-      background: linear-gradient(135deg, var(--brand), var(--brand2));
-      color:#062127;
-      box-shadow: 0 12px 28px rgba(14,165,183,.25);
+      background: #0D0D0D;
+      color:#EBEFF2;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.682);
     }
     .btn-ghost{
-      background: rgba(255,255,255,.06);
+      background: #0D0D0D;
       color:var(--text);
       border:1px solid var(--line);
     }
@@ -124,7 +127,7 @@
       display:inline-flex; gap:8px; align-items:center;
       padding:8px 12px; border-radius:999px;
       border:1px solid var(--line);
-      background: rgba(255,255,255,.04);
+      background: #3c3c3c;
       color:var(--muted);
       font-weight:800; font-size:13px;
     }
@@ -153,14 +156,14 @@
     .trust-row{display:flex; gap:12px; flex-wrap:wrap; margin-top:14px}
     .trust{
       display:flex; gap:10px; align-items:flex-start; padding:12px;
-      border-radius: var(--radius); background: rgba(255,255,255,.04);
+      border-radius: var(--radius); background: #3c3c3c;
       border:1px solid var(--line); flex:1; min-width:240px
     }
     .trust b{display:block}
     .trust span{color:var(--muted); font-size:13px; line-height:1.45}
     .icon{
       width:34px; height:34px; border-radius:12px;
-      background: rgba(45,212,191,.12);
+      background: #3c3c3c;
       border:1px solid rgba(45,212,191,.22);
       display:grid; place-items:center;
       color:var(--ok); font-weight:1000;
@@ -170,7 +173,7 @@
     /* CARD FORM */
     .card{
       border-radius: var(--radius);
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      background: #3c3c3c;
       border:1px solid var(--line);
       box-shadow: var(--shadow);
       overflow:hidden;
@@ -178,36 +181,27 @@
     .card-head{
       padding:18px 18px 12px;
       border-bottom:1px solid var(--line);
-      background: rgba(255,255,255,.03);
+      background: #3c3c3c;
     }
     .card-head h3{margin:0 0 6px;font-size:18px}
     .card-head p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}
     form{padding:16px 18px 18px;display:grid;gap:10px}
-    .grid2{display:grid;grid-template-columns:1fr 1fr; gap:10px}
+    .grid2{display:grid; color:black; gap:10px}
     @media (max-width: 480px){ .grid2{grid-template-columns:1fr} }
     input, select, textarea{
       width:100%;
       padding:12px 12px;
       border-radius: 14px;
       border:1px solid var(--line);
-      background: rgba(7,27,32,.35);
-      color: var(--text);
+      background: white;
+      color: black;
       outline:none;
       font-weight:750;
     }
     textarea{min-height:88px; resize:vertical}
-    input::placeholder, textarea::placeholder{color: rgba(167,200,205,.75)}
+    input::placeholder, textarea::placeholder{color: black}
     .small{font-size:12px;color:var(--muted);line-height:1.5}
-    .badge{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:8px 10px;
-      border-radius:999px;
-      background: rgba(251,191,36,.12);
-      border:1px solid rgba(251,191,36,.24);
-      color:#fde68a;
-      font-weight:900;
-      font-size:12px;
-    }
+
 
     /* SECTIONS */
     section{padding:36px 0}
@@ -227,7 +221,7 @@
 
     .mini{
       padding:16px; border-radius: var(--radius);
-      background: rgba(255,255,255,.04);
+      background: #3c3c3c;
       border:1px solid var(--line);
     }
     .mini b{display:block;margin-bottom:6px}
@@ -253,7 +247,7 @@
 
     .review-card{
       border-radius: var(--radius);
-      background: white;
+      background: #3c3c3c;
       border:1px solid var(--line);
       overflow:hidden;
       box-shadow: 0 10px 35px rgba(0,0,0,.20);
@@ -267,10 +261,10 @@
     }
     .avatar{
       width:48px;height:48px;border-radius:16px;
-      border:1px solid rgba(255,255,255,.14);
+      border:1px solid #3c3c3c;
       overflow:hidden;
       flex:0 0 auto;
-      background: linear-gradient(135deg, rgba(14,165,183,.35), rgba(45,212,191,.18));
+      background:transparent;
     }
     .avatar img{
       width:100%;height:100%;object-fit:cover;display:block;
@@ -287,7 +281,7 @@
     }
     .review-body{
       padding:0 14px 14px;
-      color:black
+      color:var(--text);
       line-height:1.6;
       font-weight:650;
       flex:1;
@@ -314,7 +308,7 @@
     /* FAQ */
     details{
       border-radius: var(--radius);
-      background: rgba(255,255,255,.04);
+      background: #3c3c3c;
       border:1px solid var(--line);
       padding:14px 14px;
     }
@@ -334,11 +328,70 @@
       position:fixed; right:16px; bottom:16px; z-index:60;
       display:flex; flex-direction:column; gap:10px;
     }
+    /* ===== Portfólio (4 cards com imagem + descrição) ===== */
+.portfolio-grid{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:14px;
+}
+
+@media (max-width: 980px){
+  .portfolio-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px){
+  .portfolio-grid{ grid-template-columns: 1fr; }
+}
+
+/* Card quadrado, responsivo e com imagem cortada certinho */
+.work-card{
+  margin:0;
+  border-radius: var(--radius);
+  background: rgba(255,255,255,.06); /* combina com dark/light (seu tema) */
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  overflow:hidden;
+}
+
+/* mantém a área da imagem QUADRADA independente do tamanho da foto */
+.work-img{
+  width:100%;
+  aspect-ratio: 1 / 1;  /* quadrado */
+  background: rgba(0,0,0,.10);
+  overflow:hidden;
+}
+
+.work-img img{
+  width:100%;
+  height:100%;
+  object-fit: cover;     /* corta sem distorcer */
+  display:block;
+  transform: scale(1.02); /* leve zoom pra “encher” */
+}
+
+/* descrição embaixo */
+.work-caption{
+  padding:12px 12px 14px;
+  display:grid;
+  gap:6px;
+}
+
+.work-caption b{
+  font-weight: 900;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.work-caption span{
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
     .float .btn{box-shadow: var(--shadow)}
     .toast{
       position:fixed; left:50%; transform:translateX(-50%);
       bottom:16px; z-index:70;
-      background: rgba(0,0,0,.55);
+      background: #3c3c3c;
       border:1px solid var(--line);
       color:var(--text);
       padding:10px 12px;
@@ -355,7 +408,7 @@
     <div class="container">
       <div class="nav">
         <div class="brand" aria-label="Seven Climatização">
-          <div class="logo" aria-hidden="true"></div>
+        <div class="logo"><img src="imagens/Seven-logo.png" alt="Seven Climatização"> </div>
           <div>
             Seven Climatização<br/>
             <span style="color:var(--muted);font-weight:800;font-size:12px">Comercial • Industrial • Alto padrão</span>
@@ -367,7 +420,7 @@
           <a href="#como-funciona">Como funciona</a>
           <a href="#avaliacoes">Avaliações</a>
           <a href="#faq">FAQ</a>
-          <a href="#contato" class="btn btn-ghost">Orçamento</a>
+          <a href="#contato" class="btn btn-ghost" style="background-color: #595959;">Orçamento</a>
         </div>
       </div>
     </div>
@@ -380,7 +433,7 @@
         <div>
           <span class="pill">📍 Florianópolis e Região • Atendimento técnico especializado</span>
 
-          <h1>Climatização Comercial e Industrial em Florianópolis</h1>
+          <h1>Climatização Residencial e Comercial em Florianópolis</h1>
           <p class="sub">
             Soluções completas em ar-condicionado com foco em <b>performance, conformidade e economia</b>.
             Instalação, PMOC, VRF, dutos e manutenção preventiva para empresas e obras.
@@ -390,7 +443,6 @@
             <a class="btn btn-primary" id="ctaHeroWhats" href="#" rel="nofollow">
               💬 Solicitar Orçamento no WhatsApp
             </a>
-            <span class="badge">Somente WhatsApp • Retorno rápido</span>
           </div>
 
           <div class="trust-row">
@@ -404,8 +456,8 @@
             <div class="trust">
               <div class="icon">✓</div>
               <div>
-                <b>PMOC com histórico e rastreabilidade</b>
-                <span>Organização, registros e padronização para facilitar auditorias e conformidade.</span>
+                <b>PMOC com planos de manutenção</b>
+                <span>Planos mensais, bimestrais e trimestrais.</span>
               </div>
             </div>
           </div>
@@ -435,7 +487,7 @@
             <p>Preencha em 30 segundos e envie direto no WhatsApp.</p>
           </div>
 
-          <form id="leadForm" autocomplete="on">
+          <form id="leadForm" autocomplete="on" >
             <div class="grid2">
               <input required name="nome" placeholder="Seu nome" />
               <input required name="telefone" placeholder="WhatsApp (DDD)" inputmode="tel" />
@@ -444,18 +496,18 @@
             <div class="grid2">
               <select required name="tipo">
                 <option value="" disabled selected>Tipo de atendimento</option>
+                <option>Residencial</option>
                 <option>Comercial</option>
                 <option>Industrial</option>
                 <option>Condomínio</option>
-                <option>Residencial alto padrão</option>
                 <option>Obra / Projeto</option>
               </select>
 
               <select required name="servico">
                 <option value="" disabled selected>Serviço principal</option>
-                <option>PMOC (manutenção e adequação)</option>
+                <option>PMOC (Planos de manutenção)</option>
                 <option>Manutenção de ar-condicionado</option>
-                <option>Instalação comercial</option>
+                <option>Instalação</option>
                 <option>Sistema VRF / Água gelada</option>
                 <option>Fabricação e instalação de dutos</option>
                 <option>Vistoria / diagnóstico</option>
@@ -554,35 +606,64 @@
   </section>
 
   <!-- HOW IT WORKS -->
-  <section id="como-funciona">
-    <div class="container">
-      <div class="section-title">
-        <div>
-          <h2>Como funciona (simples e direto)</h2>
-          <p>Processo pensado para ser rápido no orçamento e consistente na entrega.</p>
-        </div>
+  <section id="portfolio">
+  <div class="container">
+    <div class="section-title">
+      <div>
+        <h2>Trabalhos realizados</h2>
+        <p>Alguns projetos executados pela Seven Climatização.</p>
       </div>
-
-      <div class="cards">
-        <div class="mini">
-          <b>1) Contato e pré-diagnóstico</b>
-          <p>Você envia a demanda pelo WhatsApp. Se tiver planta/projeto, melhor ainda.</p>
-        </div>
-        <div class="mini">
-          <b>2) Visita técnica (se necessário)</b>
-          <p>Avaliamos local, carga térmica, viabilidade, pontos de instalação e acessos.</p>
-        </div>
-        <div class="mini">
-          <b>3) Orçamento claro e objetivo</b>
-          <p>Proposta com escopo e valores organizados para decisão rápida.</p>
-        </div>
-        <div class="mini">
-          <b>4) Execução e entrega</b>
-          <p>Equipe técnica, cronograma e padronização. Pós-venda e manutenção para continuidade.</p>
-        </div>
-      </div>
+      <a class="btn btn-primary" id="ctaPortfolioWhats" href="#" rel="nofollow">💬 Solicitar orçamento no WhatsApp</a>
     </div>
-  </section>
+
+    <div class="portfolio-grid">
+      <!-- Card 1 -->
+      <figure class="work-card">
+        <div class="work-img">
+          <img src="imagens/duto-wallpaper.jpg" alt="Instalação de dutos em obra comercial">
+        </div>
+        <figcaption class="work-caption">
+          <b>Dutos e ventilação</b>
+          <span>Fabricação e instalação de dutos em obra comercial.</span>
+        </figcaption>
+      </figure>
+
+      <!-- Card 2 -->
+      <figure class="work-card">
+        <div class="work-img">
+          <img src="imagens/condensadoras VRF.jpg" alt="Sistema VRF instalado em empreendimento">
+        </div>
+        <figcaption class="work-caption">
+          <b>Sistema VRF</b>
+          <span>Instalação e comissionamento em empreendimento.</span>
+        </figcaption>
+      </figure>
+
+      <!-- Card 3 -->
+      <figure class="work-card">
+        <div class="work-img">
+          <img src="imagens/Eduardo.jpg" alt="PMOC e manutenção preventiva em empresa">
+        </div>
+        <figcaption class="work-caption">
+          <b>PMOC e preventiva</b>
+          <span>Rotina preventiva com registros e organização.</span>
+        </figcaption>
+      </figure>
+
+      <!-- Card 4 -->
+      <figure class="work-card">
+        <div class="work-img">
+          <img src="imagens/cond_split.jpg" alt="Instalação de split/multisplit em ambiente comercial">
+        </div>
+        <figcaption class="work-caption">
+          <b>Split / Multisplit</b>
+          <span>Instalação com acabamento e teste final.</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
 
   <!-- SERVICE AREA -->
   <section id="area-atendida">
@@ -606,23 +687,107 @@
 
   <!-- AVALIAÇÕES EM CARDS COM FOTO -->
   <section id="avaliacoes">
-  <div class="container">
-    <div class="section-title">
-      <div>
-        <h2>Avaliações reais (Instagram)</h2>
-        <p>Depoimentos com foto aumentam muito a conversão. Abaixo os cards são gerados automaticamente.</p>
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>Depoimentos de clientes atendidos</h2>
+          <p>Experiências reais de empresas que confiaram na Seven Climatização</p>
+        </div>
+        <a class="btn btn-ghost" id="ctaReviewsWhats" href="#" rel="nofollow">💬 Quero um orçamento</a>
       </div>
-      <a class="btn btn-ghost" id="ctaReviewsWhats" href="#" rel="nofollow">💬 Quero um orçamento</a>
+
+      <div class="reviews">
+        <!-- CARD 1 -->
+        <article class="review-card">
+          <div class="review-top">
+            <div class="avatar">
+              <!-- Troque pelo arquivo real: images/avaliacao-1.jpg -->
+              <img src="imagens/channels4_profile.jpg" alt="Foto do cliente 1" onerror="this.remove();" />
+            </div>
+            <div class="review-meta">
+              <b>Quiero Café Floripa</b>
+              <span>Empresa • Florianópolis</span>
+            </div>
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+          </div>
+          <div class="review-body">
+            “Parceria de 2 anos que vem dando muito certo. Estamos muito satisfeitos com os serviços prestados pela Seven, desde o início. Fizeram a instalação dos equipamentos e desde então toda a manutenção. Equipe educada. Deixam o espaço limpo e organizado. Atendem aos chamados conforme acordado. Fazem o serviço sem qualquer problema com a loja em funcionamento, pois são muito discretos e adequados para que não haja perturbação aos clientes.”
+          </div>
+          <div class="review-footer">
+            <span class="chip">PMOC / Preventiva</span>
+          </div>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="review-card">
+          <div class="review-top">
+            <div class="avatar">
+              <img src="imagens/beck_falk_logo.jpeg" alt="Foto do cliente 2" onerror="this.remove();" />
+            </div>
+            <div class="review-meta">
+              <b>Beck & Falk</b>
+              <span>Empresa • Florianópolis</span>
+            </div>
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+          </div>
+          <div class="review-body">
+            “Na condição de projetista de sistemas de climatização, sempre indiquei a Seven para os meus clientes pela confiança que tenho na empresa. Todos os meus clientes saíram satisfeitos com a organização, limpeza e cuidado que a equipe demonstrou nos serviços.”
+          </div>
+          <div class="review-footer">
+            
+            <span class="chip">Comercial</span>
+          </div>
+        </article>
+
+        <!-- CARD 3 -->
+        <article class="review-card">
+          <div class="review-top">
+            <div class="avatar">
+              <img src="imagens/Figueirense.png" alt="Foto do cliente 3" onerror="this.remove();" />
+            </div>
+            <div class="review-meta">
+              <b>Figueirense FC</b>
+              <span>Empresa • Florianópolis</span>
+            </div>
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+          </div>
+          <div class="review-body">
+            “O Figueirense é grato por contar com profissionais de extrema dedicação e competência. Obrigado, equipe Seven
+Climatização."
+          </div>
+          <div class="review-footer">
+            
+            <span class="chip">Manutenção</span>
+          </div>
+        </article>
+        <!-- CARD 4 -->
+        <article class="review-card">
+          <div class="review-top">
+            <div class="avatar">
+              <img src="imagens/images.png" alt="Foto do cliente 3" onerror="this.remove();" />
+            </div>
+            <div class="review-meta">
+              <b>Quintal Lagoa</b>
+              <span>Empresa • Florianópolis</span>
+            </div>
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+          </div>
+          <div class="review-body">
+            "O Quintal Lagoa agradece o trabalho excepcional de toda a equipe da Seven
+Climatização. Recebemos um atendimento humanizado e eficaz que nos ajuda na resolução de problemas e melhorias em nossa casa. Obrigada!"
+          </div>
+          <div class="review-footer">
+            
+            <span class="chip">Manutenção</span>
+          </div>
+        </article>
+      </div>
+
+      <div style="margin-top:12px; display:flex; gap:12px; flex-wrap:wrap">
+        <a class="btn btn-ghost" href="#contato">✍️ Pedir orçamento</a>
+      </div>
     </div>
-
-    <div class="reviews" id="reviewsGrid"></div>
-
-    <div style="margin-top:12px; display:flex; gap:12px; flex-wrap:wrap">
-      <a class="btn btn-ghost" href="#contato">✍️ Pedir orçamento</a>
-    </div>
-  </div>
-</section>
-
+  </section>
 
   <!-- FAQ -->
   <section id="faq">
@@ -630,7 +795,7 @@
       <div class="section-title">
         <div>
           <h2>Perguntas frequentes</h2>
-          <p>Isso reduz objeções e aumenta conversão.</p>
+          <p>Dúvidas comuns sobre nossos serviços.</p>
         </div>
       </div>
 
@@ -658,7 +823,7 @@
         <div class="section-title" style="margin:0">
           <div>
             <h2 style="margin:0 0 6px">Pronto para resolver sua climatização?</h2>
-            <p style="margin:0;color:var(--muted)">Clique no WhatsApp e envie sua demanda. A mensagem já vai pronta.</p>
+            <p style="margin:0;color:var(--muted)">Clique no WhatsApp e envie sua demanda.</p>
           </div>
           <a class="btn btn-primary" id="ctaFinalWhats" href="#" rel="nofollow">💬 Solicitar orçamento no WhatsApp</a>
         </div>
@@ -779,74 +944,9 @@
       showToast();
       window.location.href = buildWhatsLink(msg);
     });
-    
-  // ✅ Coloque as imagens em /images (recomendado) ou use URL direta
-  // Ex.: images/rev-1.jpg, images/rev-2.jpg, images/rev-3.jpg
-
-  const instaReviews = [
-    {
-      name: "Figueirense FC",
-      meta: "Florianópolis • SC",
-      stars: 5,
-      tag: "PMOC / Preventiva",
-      photo: "images/Figueirense.png",
-      text: "O Figueirense é grato por contar com profissionais de extrema dedicação e competência. Obrigado, equipe Seven Climatização.",
-      sourceUrl: "https://www.instagram.com/p/CzwDjGIOmrn/"
-    },
-    {
-      name: "Beck & Falk",
-      meta: "São José • SC",
-      stars: 5,
-      tag: "Comercial",
-      photo: "images/rev-2.jpg",
-      text: "Na condição de projetista de sistemas de climatização, sempre indiquei a Seven para meus clientes pela confiança que tenho na empresa.Todos os meus clientes saíram satisfeitos com a organização, limpeza e cuidado que a equipe demonstrou nos serviços.",
-      sourceUrl: "https://www.instagram.com/p/C1XFazPiWBw/"
-    },
-    {
-      name: "Cliente 3",
-      meta: "Grande Floripa • SC",
-      stars: 5,
-      tag: "Manutenção",
-      photo: "images/rev-3.jpg",
-      text: "Cole aqui o texto do depoimento do Instagram (curto e forte).",
-      sourceUrl: "https://www.instagram.com/p/C84mOY1N03E/"
-    }
-  ];
-
-  function starString(n){ return "★★★★★".slice(0, Math.max(0, Math.min(5, n || 5))); }
-
-  function renderReviews(){
-    const grid = document.getElementById("reviewsGrid");
-    if(!grid) return;
-
-    grid.innerHTML = instaReviews.map(r => `
-      <article class="review-card">
-        <div class="review-top">
-          <div class="avatar">
-            <img src="${r.photo}" alt="Foto de ${r.name}" onerror="this.remove();" />
-          </div>
-          <div class="review-meta">
-            <b>${r.name}</b>
-            <span>${r.meta}</span>
-          </div>
-          <div class="stars" aria-label="${r.stars} estrelas">${starString(r.stars)}</div>
-        </div>
-
-        <div class="review-body">“${r.text}”</div>
-
-        <div class="review-footer">
-          <a href="${r.sourceUrl}" target="_blank" rel="nofollow noopener" style="text-decoration:underline; color:inherit;">
-            Origem: Instagram
-          </a>
-          <span class="chip">${r.tag}</span>
-        </div>
-      </article>
-    `).join("");
-  }
-
-  renderReviews();
-</script>
-
   </script>
 </body>
 </html>
+
+
+
