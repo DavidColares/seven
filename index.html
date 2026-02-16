@@ -533,8 +533,8 @@
             </button>
 
             <div class="small">
-              Você será direcionado ao WhatsApp com a mensagem pronta.
-              <br/>Atendemos: <b>Florianópolis, São José, Palhoça e Biguaçu</b>.
+              Você será direcionado ao WhatsApp.
+              <br/>Atendemos: <b>Grande Florianópolis, região de Balneário Camboriú e região de Criciúma – SC.</b>.
             </div>
           </form>
         </aside>
@@ -589,7 +589,6 @@
 
       <div class="kpi">
         <div class="mini">
-          <div class="hide icon">⚡</div>
           <div class="icon">⚡</div>
           <div>
             <b>Retorno rápido</b>
@@ -678,16 +677,16 @@
       <div class="section-title">
         <div>
           <h2>Área atendida</h2>
-          <p>Atendemos Florianópolis, São José, Palhoça, Biguaçu e região.</p>
+          <p>Atendemos Grande Florianópolis, região de Balneário Camboriú e região de Criciúma.</p>
         </div>
         
       </div>
 
       <div class="cards">
-        <div class="mini"><b>Florianópolis</b><p>Centro, Norte, Sul, Continente e bairros.</p></div>
-        <div class="mini"><b>São José</b><p>Comércio, condomínios e obras.</p></div>
-        <div class="mini"><b>Palhoça</b><p>Empresas e projetos residenciais.</p></div>
-        <div class="mini"><b>Biguaçu</b><p>Atendimento sob agendamento.</p></div>
+        <div class="mini"><b>Florianópolis, São José, Palhoça e Biguaçu.</b><p>Atendimento comercial, industrial e alto padrão.</p></div>
+        <div class="mini"><b>Balneário Camboriú e Itapema.</b><p>Empreendimentos, condomínios e obras comerciais.</p></div>
+        <div class="mini"><b>Criciúma e cidades vizinhas.</b><p>Projetos corporativos e industriais.</p></div>
+        <div class="mini"><b>Outras cidades sob consulta.</b><p>Atendemos obras específicas mediante agendamento.</p></div>
       </div>
     </div>
   </section>
@@ -849,7 +848,7 @@ Climatização. Recebemos um atendimento humanizado e eficaz que nos ajuda na re
           </div>
         </div>
        <div class="seo-box">
-  <b>SEO local (para o Google)</b>
+  
   <p>
     Atendemos empresas e obras em Florianópolis e região, com foco em
     climatização comercial, industrial e PMOC. Nosso conteúdo é otimizado
@@ -857,7 +856,7 @@ Climatização. Recebemos um atendimento humanizado e eficaz que nos ajuda na re
   </p>
 
   <p class="small">
-    <b>Palavras-chave incluídas:</b>
+    
     climatização comercial em Florianópolis, climatização industrial, PMOC,
     manutenção de ar-condicionado, instalação de ar-condicionado,
     sistemas VRF, dutos de climatização.
@@ -882,7 +881,6 @@ Climatização. Recebemos um atendimento humanizado e eficaz que nos ajuda na re
     // ========= CONFIGURE AQUI =========
     const WHATSAPP_NUMBER = "5548996328509"; // 55 + DDD + número
     const BUSINESS_NAME = "Seven Climatização";
-    const CITY = "Florianópolis";
     // ================================
 
     document.getElementById("year").textContent = new Date().getFullYear();
@@ -909,14 +907,15 @@ Climatização. Recebemos um atendimento humanizado e eficaz que nos ajuda na re
     }
 
     function defaultMessage(){
-      let msg = `Olá! Quero um orçamento com a ${BUSINESS_NAME}.\n`;
-      msg += `Cidade: ${CITY}\n`;
-      if (utm.source || utm.medium || utm.campaign){
-        msg += `\n(UTM) source=${utm.source} | medium=${utm.medium} | campaign=${utm.campaign}\n`;
-      }
-      msg += `\nMinha demanda: `;
-      return msg;
-    }
+  let msg = `Olá! Quero um orçamento com a ${BUSINESS_NAME}.`;
+
+  if (utm.source || utm.medium || utm.campaign){
+    msg += `\n\n(UTM) source=${utm.source} | medium=${utm.medium} | campaign=${utm.campaign}`;
+  }
+
+  return msg;
+}
+
 
     // Wire CTAs
     const ctas = ["ctaHeroWhats","ctaServicesWhats","ctaAreaWhats","ctaReviewsWhats","ctaFinalWhats","ctaFloatWhats"];
